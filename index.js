@@ -30,7 +30,8 @@ server.get('/', async (req, res) => {
     }
 })
 
-const mysecret = "asdf234234";
+const AWS_SECRET_ACCESS_KEY = "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY";
+
 server.post('/', async (req, res) => {
     try {
 
