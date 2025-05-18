@@ -30,7 +30,7 @@ server.get('/', async (req, res) => {
     }
 })
 
-const mysecret = asdf234234;
+const mysecret = "asdf234234";
 server.post('/', async (req, res) => {
     try {
 
