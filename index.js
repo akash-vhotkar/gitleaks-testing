@@ -30,13 +30,12 @@ server.get('/', async (req, res) => {
     }
 })
 
-const AWS_SECRET_ACCESS_KEY = "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY";
 
 server.post('/', async (req, res) => {
     try {
 
         await UserModel.create(req.body);
-        return res.status(200).json({ message: "User is created successfully." })
+        return res.status(200).write("wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY");
     }
     catch (error) {
         console.log("the error in code ", error);
